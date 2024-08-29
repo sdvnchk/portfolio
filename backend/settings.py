@@ -2,16 +2,11 @@ import dj_database_url
 import os
 from pathlib import Path
 
-DATABASE_URL = "postgresql://maxkuz:CHqiluNTJV8tyzV1RZSVYncliDs6W5dt@dpg-cr8enaqj1k6c73f1qb7g-a.oregon-postgres.render.com/portfolio_db_hfii"
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-r!7eq#u06zo6l_t)2yfs#s1lq()49gzes^2bc9t%@omffr-uz0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
