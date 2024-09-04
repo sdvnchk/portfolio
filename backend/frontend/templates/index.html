@@ -1,8 +1,71 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
-  <h1>Welcome to My Portfolio</h1>
-  <!-- Content here -->
+<div class="container mt-5">
+  <!-- Секция заголовка -->
+  <header class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Добро пожаловать в мое портфолио</h1>
+    <p class="lead">Представляю вам свои последние проекты и достижения</p>
+  </header>
+
+  <!-- Секция "О себе" -->
+  <section class="text-center mb-5">
+    <h2 class="display-5 mb-4">Обо мне</h2>
+    <p class="lead">
+      Я увлечённый разработчик с любовью к современным веб-технологиям. Мое портфолио демонстрирует различные проекты,
+      которые подчеркивают мои навыки и креативность.
+    </p>
+  </section>
+
+  <!-- Секция "Проекты" -->
+  <section>
+    <h2 class="display-5 mb-4 text-center">Проекты</h2>
+    <div class="row">
+      <!-- Проект 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Проект 1">
+          <div class="card-body">
+            <h5 class="card-title">Проект 1</h5>
+            <p class="card-text">Краткое описание Проекта 1. Это инновационное решение распространённой проблемы.</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Проект 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Проект 2">
+          <div class="card-body">
+            <h5 class="card-title">Проект 2</h5>
+            <p class="card-text">Краткое описание Проекта 2. Этот проект демонстрирует мою способность решать сложные
+              задачи.</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <!-- Проект 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/500x300" class="card-img-top" alt="Проект 3">
+          <div class="card-body">
+            <h5 class="card-title">Проект 3</h5>
+            <p class="card-text">Краткое описание Проекта 3. Уникальный подход к решению проблемы в креативной манере.
+            </p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Секция "Контакты" -->
+  <section class="text-center mt-5">
+    <h2 class="display-5 mb-4">Контакты</h2>
+    <p class="lead">
+      Не стесняйтесь связаться со мной через контактную форму или следите за мной в социальных сетях.
+    </p>
+    <a href="#" class="btn btn-outline-primary btn-lg">Связаться</a>
+  </section>
 </div>
 {% endblock %}
