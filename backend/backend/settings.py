@@ -17,7 +17,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['portfolio-pxpe.onrender.com', '127.0.0.1', 'localhost']
-
+CORS_ALLOW_ALL_ORIGINS = True
 CSRF_COOKIE_DOMAIN = '.portfolio-pxpe.onrender.com'
 SESSION_COOKIE_DOMAIN = '.portfolio-pxpe.onrender.com'
 
