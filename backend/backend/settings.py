@@ -17,9 +17,13 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = ['portfolio-pxpe.onrender.com', '127.0.0.1', 'localhost']
-CORS_ALLOW_ALL_ORIGINS = True
-CSRF_COOKIE_DOMAIN = '.portfolio-pxpe.onrender.com'
-SESSION_COOKIE_DOMAIN = '.portfolio-pxpe.onrender.com'
+
+# CSRF
+CSRF_TRUSTED_ORIGINS = ['https://portfolio-pxpe.onrender.com']
+CSRF_COOKIE_DOMAIN = 'portfolio-pxpe.onrender.com'
+SESSION_COOKIE_DOMAIN = 'portfolio-pxpe.onrender.com'
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 # Application definition
 
@@ -44,10 +48,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-]
-
-CORS_ALLOWED_ORIGINS = [
-    'https://portfolio-pxpe.onrender.com',
 ]
 
 ROOT_URLCONF = 'backend.urls'
